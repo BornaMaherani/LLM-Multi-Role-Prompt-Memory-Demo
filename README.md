@@ -1,8 +1,8 @@
-# 🧠 LLM Multi‑Role Prompt & Memory Demo
+#  LLM Multi‑Role Prompt & Memory Demo
 
 > A mini‑project showcasing how to work with Large Language Model (LLM) APIs, send dynamic prompts for different AI roles & models, and implement conversation memory through summarization.
 
-## 📌 Project Overview
+##  Project Overview
 This project demonstrates:
 - Sending prompts to LLM APIs with different **roles** and **models**.
 - Automating prompt generation for 4 predefined AI personas.
@@ -14,10 +14,10 @@ The notebook is structured in **two main parts**:
 
 ### **Part 1 — Multi‑Role Prompting**
 You can send one piece of content to different roles such as:
-- 🕵️ Detective — e.g., counting words starting with a certain letter.
-- 😏 Sarcastic Persona — making witty guesses about content origins.
-- 📚 Literary Scholar — rating and reviewing.
-- 🩺 Doctor — inferring possible health traits from writing.
+-  Detective — e.g., counting words starting with a certain letter.
+-  Sarcastic Persona — making witty guesses about content origins.
+-  Literary Scholar — rating and reviewing.
+-  Doctor — inferring possible health traits from writing.
 
 The project:
 1. Reads an AI‑generated email (`email.txt`).
@@ -34,7 +34,7 @@ Features:
 - Loops through chat turns until the user enters `EXIT`.
 - Shows how memory compression allows long chatting without hitting token limits.
 
-## 📂 Repository Structure
+##  Repository Structure
 ```
 ├── sample.ipynb          # Main Jupyter Notebook with code & execution examples
 ├── email.txt             # AI‑generated sample email
@@ -42,26 +42,26 @@ Features:
 └── README.md             # Project documentation (this file)
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 1️⃣ Prerequisites
+### 1 Prerequisites
 Make sure you have:
 - Python 3.9+
 - [pip](https://pip.pypa.io/en/stable/)
 - An API key from [OpenRouter](https://openrouter.ai/)
 
-### 2️⃣ Install Dependencies
+### 2️ Install Dependencies
 ```bash
 pip install openai python-dotenv
 ```
 
-### 3️⃣ Environment Setup
+### 3️ Environment Setup
 Create a `.env` file with your API key:
 ```bash
 OPENROUTER_API_KEY=your_api_key_here
 ```
 
-Or set it directly in `sample.ipynb` (⚠️ not recommended for public repos):
+Or set it directly in `sample.ipynb` ( not recommended for public repos):
 ```python
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
@@ -69,7 +69,7 @@ client = OpenAI(
 )
 ```
 
-### 4️⃣ Run the Notebook
+### 4️ Run the Notebook
 Open `sample.ipynb` in Jupyter and run all cells.
 ```bash
 jupyter notebook sample.ipynb
@@ -77,7 +77,7 @@ jupyter notebook sample.ipynb
 
 ---
 
-## 🛠 How It Works
+##  How It Works
 
 ### **Prompt Sending Function**
 ```python
@@ -100,7 +100,7 @@ This wraps the API call, prepping a system prompt + user prompt combo.
 
 ---
 
-## 📊 Example Run
+##  Example Run
 ### Role‑based Outputs (Sample)
 - **Detective:** Counts words starting with "e".
 - **Sarcastic Persona:** Guesses which AI model wrote the email.
@@ -109,14 +109,14 @@ This wraps the API call, prepping a system prompt + user prompt combo.
 
 ---
 
-## 📦 Technologies Used
+##  Technologies Used
 - **Python 3.9+**
 - **Jupyter Notebook**
 - **OpenAI / OpenRouter API** for LLM calls
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 Pull requests are welcome! Please:
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -126,7 +126,7 @@ Pull requests are welcome! Please:
 
 ---
 
-## 📄 License
+##  License
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
