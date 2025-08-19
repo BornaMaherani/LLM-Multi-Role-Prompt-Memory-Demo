@@ -130,6 +130,3 @@ Pull requests are welcome! Please:
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
-
-**Author:** Milad  
-**GitHub:** [YourUsername](https://github.com/YourUsername)
